@@ -33,6 +33,12 @@
             #binding-cells = <2>;
             tapping-term-ms = <190>;
         };
+
+        enable_mouse: enable_mouse {
+            compatible = "zmk,behavior-mouse-key-press";
+            label = "ENABLE_MOUSE";
+            #binding-cells = <1>;
+        };
     };
 
     keymap {
@@ -61,10 +67,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE   &kp N1        &kp N2        &kp N3             &kp N4        &kp N5          &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&kp LSHFT   &kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp K_MUTE      &trans    &trans    &trans  &trans     &trans  &trans
-                                        &trans             &trans        &trans          &trans    &trans    &trans
+&kp GRAVE   &kp N1        &kp N2        &kp N3             &kp N4        &kp N5          &kp N6            &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT          &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&kp LSHFT   &kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp K_MUTE      &trans            &trans    &trans  &trans     &trans  &trans
+                                        &trans             &trans        &trans          &kp LEFT_CONTROL  &trans    &trans
             >;
         };
 
