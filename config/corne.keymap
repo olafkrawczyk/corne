@@ -91,10 +91,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &kp F2  &trans        &trans          &trans      &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans        &mkp MB1        &mkp MB2    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &msc SCRL_UP  &msc SCRL_DOWN  &trans      &trans          &trans          &trans        &trans           &trans  &trans
-                        &trans        &trans          &trans      &trans          &trans          &trans
+&trans  &trans              &kp F2  &trans        &trans          &trans      &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &enable_mouse MCLK  &trans  &trans        &mkp MB1        &mkp MB2    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans              &trans  &msc SCRL_UP  &msc SCRL_DOWN  &trans      &trans          &trans          &trans        &trans           &trans  &trans
+                                    &trans        &trans          &trans      &trans          &trans          &trans
             >;
         };
     };
