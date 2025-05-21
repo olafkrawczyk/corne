@@ -10,6 +10,13 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    i2c1: i2c1 {
+        compatible = "zephyr,i2c-nrf";
+        status = "okay";
+        clock-frequency = <I2C_BITRATE_FAST>;
+        contrast = <0x40>; 
+    };
+
     combos {
         compatible = "zmk,combos";
 
