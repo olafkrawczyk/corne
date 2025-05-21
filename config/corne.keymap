@@ -83,7 +83,7 @@
 
             bindings = <
 &kp TAB    &kp SQT          &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD        &kp AMPERSAND  &kp QUESTION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp BSPC
-&kp LCTRL  &kp EXCLAMATION  &kp MINUS      &kp EQUAL         &kp HASH           &trans            &kp PIPE       &kp COLON     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp NON_US_BACKSLASH
+&kp LCTRL  &kp EXCLAMATION  &kp MINUS      &kp EQUAL         &kp HASH           &kp PLUS          &kp PIPE       &kp COLON     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp NON_US_BACKSLASH
 &kp LSHFT  &kp CARET        &kp SLASH      &kp ASTERISK      &kp GRAVE          &kp UNDERSCORE    &kp TILDE      &kp DOLLAR    &kp LEFT_BRACE        &kp RBRC               &kp AT_SIGN   &kp TILDE
                                            &trans            &mo 3              &trans            &trans         &trans        &trans
             >;
