@@ -91,10 +91,19 @@
 
         layer_3 {
             bindings = <
-&trans  &trans              &kp F2  &trans        &trans          &trans      &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans              &kp F2  &trans        &trans          &trans      &trans          &trans          &trans        &trans           &trans  &tog 4
 &trans  &enable_mouse MCLK  &trans  &trans        &mkp MB1        &mkp MB2    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans              &trans  &msc SCRL_UP  &msc SCRL_DOWN  &trans      &trans          &trans          &trans        &trans           &trans  &trans
                                     &trans        &trans          &trans      &trans          &trans          &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &kp Q  &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y       &kp SQT    &trans
+&trans  &kp A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I       &kp O      &trans
+&trans  &kp Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH  &trans
+                      &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
