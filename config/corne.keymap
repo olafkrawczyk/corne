@@ -28,7 +28,7 @@
         mode_tap: mode_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MODE_TAP";
-            bindings = <&mt>, <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
