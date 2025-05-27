@@ -41,6 +41,24 @@
             label = "ENABLE_MOUSE";
             #binding-cells = <1>;
         };
+        
+        mmv_faster: mmv_faster {
+            compatible = "zmk,behavior-mouse-move";
+            label = "MOUSE_MOVE_FASTER";
+            #binding-cells = <1>;
+            delay-ms = <0>;
+            time-to-max-speed-ms = <400>;
+            acceleration-exponent = <1>;
+        };
+        
+        msc_faster: msc_faster {
+            compatible = "zmk,behavior-mouse-scroll";
+            label = "MOUSE_SCROLL_FASTER";
+            #binding-cells = <1>;
+            delay-ms = <0>;
+            time-to-max-speed-ms = <300>;
+            acceleration-exponent = <1>;
+        };
     };
 
     keymap {
@@ -93,10 +111,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans              &kp F2  &trans        &trans             &trans                &trans          &trans          &trans        &trans           &trans  &out OUT_TOG
-&trans  &enable_mouse MCLK  &trans  &trans        &enable_mouse MB1  &enable_mouse RCLK    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans              &trans  &msc SCRL_UP  &msc SCRL_DOWN     &trans                &trans          &trans          &trans        &trans           &trans  &trans
-                                    &trans        &trans             &trans                &trans          &trans          &trans
+&trans  &trans              &kp F2        &trans             &trans          &trans                &trans             &trans             &trans           &trans              &trans  &out OUT_TOG
+&trans  &mkp MCLK           &trans        &trans             &mkp LCLK       &mkp RCLK             &mmv_faster MOVE_LEFT  &mmv_faster MOVE_DOWN  &mmv_faster MOVE_UP  &mmv_faster MOVE_RIGHT  &trans  &trans
+&trans  &trans              &trans        &msc_faster SCRL_UP  &msc_faster SCRL_DOWN  &trans      &trans             &trans             &trans           &trans              &trans  &trans
+                                          &trans             &trans          &trans                &trans             &trans             &trans
             >;
         };
 
