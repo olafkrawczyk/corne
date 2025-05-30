@@ -17,19 +17,7 @@
 &msc { acceleration-exponent = <1>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <14 15>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <20 21>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         mode_tap: mode_tap {
