@@ -42,7 +42,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        BASE {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -57,7 +57,7 @@
             >;
         };
 
-        lower_layer {
+        NUM {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -72,7 +72,7 @@
             >;
         };
 
-        raise_layer {
+        SYMBOL {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -87,7 +87,7 @@
             >;
         };
 
-        layer_3 {
+        MOUSE {
             bindings = <
 &trans  &trans     &kp F2  &trans        &trans          &trans       &trans          &trans          &trans        &trans           &trans  &out OUT_TOG
 &trans  &mkp MCLK  &trans  &trans        &mkp LCLK       &mkp RCLK    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
@@ -96,7 +96,7 @@
             >;
         };
 
-        layer_4 {
+        COLEMAK {
             bindings = <
 &trans  &kp Q  &kp W  &kp F   &kp P  &kp B     &kp J   &kp L  &kp U      &kp Y       &kp SQT    &trans
 &trans  &kp A  &kp R  &kp S   &kp T  &kp G     &kp M   &kp N  &kp E      &kp I       &kp O      &trans
