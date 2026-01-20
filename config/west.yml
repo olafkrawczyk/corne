@@ -5,16 +5,16 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
 
-    - name: infely
-      url-base: https://github.com/infely
+    - name: nfthomas
+      url-base: https://github.com/nfthomas
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
 
-    - name: nice-view-battery
-      remote: infely
+    - name: infely-nice-view-battery
+      remote: nfthomas
       revision: main
   self:
     path: config
