@@ -17,7 +17,6 @@
         label = "NICE_VIEW";
         spi-max-frequency = <4000000>;
         reg = <0>;
-        /* Vertical (rotated) logical resolution used by ZMK's nice!view screen */
         width = <68>;
         height = <160>;
         display-inversion;
