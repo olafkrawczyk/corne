@@ -11,10 +11,7 @@
 };
 
 &nice_view_spi {
-    /*
-     * CS is defined by `nice_view_adapter.overlay` (OLED->SPI adapter wiring).
-     * Defining it again here can override the adapter and break the display.
-     */
+    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
     nice_view: nice_view@0 {
         compatible = "nordic,nrf-lcd";
         label = "NICE_VIEW";
