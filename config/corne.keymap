@@ -57,6 +57,12 @@
             bindings = <&m_strict>;
         };
 
+        combo_screenshot {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&m_screenshot>;
+        };
+
         combo_reset {
             timeout-ms = <50>;
             key-positions = <0 10 11>;
@@ -126,6 +132,13 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LA(C))>;
             label = "M_SNAP_C";
+        };
+
+        m_screenshot: m_screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LS(N4)))>;
+            label = "M_SCREENSHOT";
         };
     };
 
